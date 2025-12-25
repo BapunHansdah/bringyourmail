@@ -56,7 +56,7 @@ export function Sidebar() {
     <>
       <header className="fixed left-0 right-0 top-0 z-50 flex h-14 items-center justify-between border-b border-border bg-card px-4 md:hidden">
         <div className="flex items-center gap-2">
-          <Mail className="h-5 w-5 text-primary" />
+          <img src="/logo.png" alt="Logo" className="h-5 w-5" />
           <span className="font-semibold">Email Sender</span>
         </div>
         <Button variant="ghost" size="icon" onClick={() => setMobileOpen(!mobileOpen)}>
@@ -78,7 +78,8 @@ export function Sidebar() {
         )}
       >
         <div className="flex h-14 items-center gap-2 border-b border-border px-6 md:h-16">
-          <Mail className="h-6 w-6 text-primary" />
+          {/* <Mail className="h-6 w-6 text-primary" /> */}
+          <img src="/logo.png" alt="Logo" className="h-6 w-6" />
           <span className="text-lg font-semibold">Email Sender</span>
           <Button variant="ghost" size="icon" className="ml-auto md:hidden" onClick={() => setMobileOpen(false)}>
             <X className="h-5 w-5" />
